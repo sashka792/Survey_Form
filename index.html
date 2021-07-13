@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
+
 </head>
 
 <body class="body">
@@ -19,21 +21,22 @@
         <main class="main">
 
             <form action="" id="survey-form" class="survey-form">
-                <div class="survey-form-wrap survey-form__name">
-                    <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="Enter your name">
+                <div class="survey-form-wrap survey-form-wrap__user-info survey-form__name">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
                 </div>
-                <div class="survey-form-wrap survey-form__email">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="Enter your Email">
+                <div class="survey-form-wrap survey-form-wrap__user-info survey-form__email">
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter your Email" required>
                 </div>
-                <div class="survey-form-wrap survey-form__age">
-                    <label for="number">Age</label>
-                    <input id="number" type="text" placeholder="Age">
+                <div class="survey-form-wrap survey-form-wrap__user-info survey-form__age">
+                    <label id="number-label" for="number">Age</label>
+                    <input id="number" type="number" min="0" max="100" placeholder="Age">
                 </div>
                 <div class="survey-form-wrap survey-form__age">
                     <label for="name">Which option best describes your current role?</label>
-                    <select name="" id="" aria-placeholder="Select current role">
+                    <select name="" id="dropdown">
+                        <option disabled selected value>Select current role</option>
                         <option>Student</option>
                         <option>FUll Time Job</option>
                         <option>Full Time Learner</option>
@@ -41,10 +44,39 @@
                         <option>Other</option>
                     </select>
                 </div>
+                <div class="survey-form-wrap survey-form__radio">
+                    <p>Would you recomend freeCodeCamp to a friend</p>
+                    <label for="definitely">
+                        <input id="definitely" type="radio" value="definitely" name="recommend" checked>
+                        Definitely
+                    </label>
+                    <label for="maybe">
+                        <input id="maybe" type="radio" value="maybe" name="recommend">
+                        Maybe
+                    </label>
+                    <label for="not_sure">
+                        <input id="not_sure" type="radio" value="not-sure" name="recommend">
+                        Not sure
+                    </label>
+                </div>
 
+                <div class="survey-form-wrap survey-form__age">
+                    <label for="name">What is your favorite feature of freeCodeCamp?</label>
+                    <select name="" id="dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option>Chalenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+                </div>
+
+                <button id="submit" class="survey-form__button">Submit</button>
             </form>
         </main>
     </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

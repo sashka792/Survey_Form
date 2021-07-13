@@ -12,6 +12,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .container {
@@ -36,13 +37,46 @@
 
 .survey-form {
     background: rgba(58, 58, 158, 0.8);
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     /* max-width: ; */
 }
 
 .survey-form-wrap {
-    flex-direction: column;
     margin: 0;
     padding: 0;
+    text-align: left;
+}
+
+.survey-form-wrap__user-info label,
+.survey-form__age label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.survey-form-wrap__user-info input,
+.survey-form__age select {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+.survey-form__radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.survey-form__button {
+    width: 100%;
+    display: block;
+    background-color: mediumseagreen;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
 }
