@@ -68,6 +68,18 @@
     align-items: flex-start;
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.survey-form__message {
+    width: 100%;
+    display: flex;
+}
+
 .survey-form__button {
     width: 100%;
     display: block;
